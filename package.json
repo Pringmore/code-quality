@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && eslint . --ext .ts && npm test --watch=false"
+      "pre-commit": "npm run test-combo && npm run test-combo"
     }
   },
   "scripts": {
@@ -12,7 +12,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test-combo": "npm run lint && eslint . --ext .ts && npm test --watch=false"
   },
   "private": true,
   "dependencies": {

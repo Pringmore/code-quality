@@ -17,11 +17,11 @@ export class AppComponent implements OnInit, OnDestroy {
       for (const element of arrayData) {
         switch (element) {
           case undefined:
-            console.log('Ooups that s a fake information.');
+            console.log('Ooups that s a fake information!');
             break;
 
           default:
-            console.log('Name is: ', element);
+            console.log('Is your name: ', element);
             break;
         }
       }
